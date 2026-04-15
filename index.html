@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto SIMC</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <link rel="stylesheet" href="./css/x.css">
+</head>
+<body>
+
+    <div class="glass-container">
+        <h2>Registro de Errores</h2>
+
+        <form id="dataForm">
+            
+            <div class="input-group">
+                <label for="equipoId">Cuentanos tu error</label>
+                <input type="text" id="equipoId" placeholder="Ej: No me prende la camara" required>
+            </div>
+
+            <div class="input-group">
+                <label for="correo">Tu Gmail </label>
+                <input type="email" id="correo" placeholder="usuario@empresa.com" required>
+                <span id="emailError" class="error-text"></span> 
+            </div>
+
+            <div class="input-group">
+                <label for="foto">Subir una foto del problema</label>
+                <input type="file" id="foto" accept="image/*" required>
+                
+                <div class="preview-box">
+                    <img id="imgPreview" src="" alt="Vista previa de la imagen" style="display: none;">
+                </div>
+            </div>
+
+            <button type="submit" id="btnSubmit">Enviar mi error</button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/d.js"></script>
+</body>
+</html>
